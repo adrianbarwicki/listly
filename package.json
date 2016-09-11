@@ -1,0 +1,40 @@
+{
+  "name": "listly",
+  "version": "1.0.0",
+  "description": "Subs lists",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc; node server-cdn.js; node server.js;",
+    "startCDN": "tsc; gulp; node server-cdn.js;",
+    "startAPI": "tsc; gulp; node server-api.js;"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://viciceo@bitbucket.org/viciceo/listly.git"
+  },
+  "author": "Adrian Barwicki",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/viciceo/listly#readme",
+  "dependencies": {
+    "async": "^2.0.1",
+    "body-parser": "^1.15.2",
+    "cors": "^2.7.1",
+    "ejs": "^2.5.1",
+    "express": "^4.14.0",
+    "fs": "0.0.2",
+    "mandrill-api": "^1.0.45",
+    "mysql": "^2.11.1",
+    "rand-token": "^0.2.1",
+    "tsc": "^1.20150623.0"
+  },
+  "devDependencies": {
+    "@types/requirejs": "^2.1.26",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.12",
+    "gulp-copy": "0.0.2",
+    "gulp-htmlmin": "^2.0.0",
+    "gulp-minify": "0.0.14",
+    "gulp-rename": "^1.2.2",
+    "jasmine": "^2.4.1"
+  }
+}

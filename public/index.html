@@ -1,0 +1,81 @@
+<html>
+
+    <head>
+    </head>
+
+    <body>
+    
+        <h1>Listly CDN</h1>
+        
+        
+        <h2>Subscription</h2>
+        <pre>
+            &lt;div style=&quot;width:300px;&quot;&gt;
+                &lt;div id=&quot;listly-subs-form&quot; 
+                     data-button-label=&quot;Hello!&quot; 
+                     data-lang=&quot;de&quot; 
+                     data-public-key=&quot;XXXYourPublicKeyXXX&quot; 
+                     data-button-bg-color=&quot;#00aeff&quot;
+                     data-props=&quot;prop-campaign=campaign1&prop-source=test2&prop-test_property=test3&quot; &gt;
+                &lt;/div&gt;
+             &lt;/div&gt;
+        </pre>
+        
+        
+        <h3>Attributes</h3>
+        
+        <p>You can configure the look of the subscription formular to a certain degree. Also you are able to set some meta properties on every subscription. Use the following attributes:</p>
+        
+        <ul>
+            <li><strong>data-public-key</strong> (required) : Public Key of the Listly List, enables to identify to which list the subscription belongs.</li>
+            <li><strong>data-lang</strong> : Language code for the input fields placeholders, must be 'en' or 'de'</li>
+            <li><strong>data-button-label</strong> : Text label that will appear on the 'Submit' button</li>
+            <li><strong>data-button-bg-color</strong> the color of the 'submit' button</li>
+            <li>
+                <strong>data-props</strong> properties that are saved together with the subscriber emails
+                <p><strong>data-props</strong> can be used for example for A/B tests or identifing where the subscription happened. You are free however to set up any properties you want. Every property should contain in its key (name) the prefix 'prop-'. The property source would also be here as 'prop-source=value'. You can separate many properties by the sign '&', e.g prop-test1=value1&prop-test2=value2.</p>
+                
+                <p>A/B Test Example:</p>
+                <p>data-props="prop-campaign=campaign1&prop-source=test2&prop-test_property=test3"</p>
+                    or
+                <p>data-props="prop-source=landingpage1"</p>
+            </li>
+        </ul>
+        
+
+        <h2>Code snippet</h2>
+        <pre>
+            (function(src,script){
+                script = document.createElement(script);
+                script.src=src;
+                document.body.appendChild(script);
+            }("https://listly-cdn.viciqloud.com//snippets/listly-sdk.min.js","script"));
+        </pre>
+        
+        
+        <h2>Libs</h2>
+        <ul>
+            <li><a href="/snippets/listly-sdk.js">Listly SDK</a></li>
+            <li><a href="/snippets/listly-sdk.min.js">Listly SDK (minified)</a></li>
+        </ul>
+        
+        
+        
+       
+        <h2>Examples</h2>
+        <ul>
+            <li><a href="/examples/collect-emails.html">Subsription form and Contact formular</a></li>
+            <li><a href="/examples/collect-emails.html">Contact formular</a></li>
+        </ul>
+        
+        
+       
+        <h2>Credits</h2>
+        <a href="https://viciqloud.com">ViciQloud : Web. Mobile. Nodejs.</a>
+        
+        <h2>Licence</h2>
+        MIT
+        
+        
+    </body>
+</html>
